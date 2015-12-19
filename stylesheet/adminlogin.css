@@ -1,0 +1,45 @@
+html{
+	text-transform:uppercase;
+	font-size:24px;
+	color:#709C3F;
+	height:210%;
+	width:100%;
+	font-family:'oswaldregular', sans-serif;
+}
+body{
+	background-color: #F9FBDD;
+	overflow: hidden;
+	padding-top: 20%;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: oswaldregular, sans-serif;
+	font-size: 100%;
+}
+#adminLogin{
+	background-color:#FFF;
+	padding:17px;
+	width:39%;
+	box-sizing:border-box;
+	-webkit-box-shadow: -3px 0px 16px 4px rgba(0,0,0,0.44);
+	-moz-box-shadow: -3px 0px 16px 4px rgba(0,0,0,0.44);
+	box-shadow: -3px 0px 16px 4px rgba(0,0,0,0.44);
+	margin:auto;
+}
+form{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+legend,input[type='submit']{
+	background-color:#709C3F;
+	color:#FFF;
+	font-family:'oswaldregular', sans-serif;
+	text-transform:uppercase;
+}
+#sqlerror,#adminLoginError p{
+	text-align:center;
+	font-size:16px;
+	color:#F00;
+	margin-bottom:3px;
+}

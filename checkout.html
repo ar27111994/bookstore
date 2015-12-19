@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet/fonts/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="stylesheet/reset.css">
+<link rel="stylesheet" type="text/css" href="stylesheet/checkout.css">
+<link rel="stylesheet" type="text/css" href="stylesheet/icons/style.css">
+<meta charset="utf-8">
+<title>Checkout</title>
+<script>
+var s=/\+([0-9])+\+$/g;
+function check(){
+var x=document.getElementById('ph').value;
+if(!s.test(x)){
+alert("Follow the pattern +[0-9]+");
+}
+}
+</script>
+</head>
+<body>
+<header>
+<div id="topbar">
+<nav>
+<ul>
+<li><a href="index.html"><span class="icon-home3"></span>Home</a></li>
+<li><a href=""><span class="icon-user"></span>My Account</a></li>
+<li><a href=""><span class="icon-cart"></span>Shopping Cart</a></li>
+<li><a href="#"><span class="icon-checkmark"></span>Checkout</a></li>
+</ul>
+</nav>
+</div>
+<div id="subheader">
+<a href="index.html"><h1 id="logo">UAAR Bookstore</h1></a>
+<div id="login"><a href="register.html">Login | Register</a></div>
+</div>
+<div id="cat">
+<nav>
+<ul>
+<li><a href="">Islamic Books</a></li>
+<li><a href="">Magazines</a></li>
+<li><a href="">Textbooks</a></li>
+<li><a href="">Novels</a></li>
+<li><a href="">Notes</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div id="container">
+<div id="shipping_details">
+<h1>Shopping Cart</h1>
+<section id="products">
+<table>
+<thead>
+<tr>
+<th>Book</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Transportation Fee</th>
+<th>Total Price</th>
+<th>Select / Deselect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/something_goes_here.jpg"><p>Oxford Urdu-English Dictionary 9th Edition</p></td>
+<td>2</td>
+<td>Rs. 999</td>
+<td>Rs. 150</td>
+<td>Rs. 1149</td>
+<td><input type="checkbox" checked></td>
+</tr>
+<tr>
+<td><img src="images/E-Mail Selling Techniques.jpg"></a><p>E-Mail Selling Techniques</p></td>
+<td>2</td>
+<td>Rs. 200</td>
+<td>Free</td>
+<td>Rs. 200</td>
+<td><input type="checkbox" checked></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="total">
+<h2>Grand Total:</h2>
+<p>Rs. 1349</p>
+</section>
+</div>
+<form id="address">
+<fieldset>
+<legend>
+Shipping Information
+</legend>
+<table>
+<tr><td><label for="username">Enter your name:</label></td>
+<td><input type="text" name="username" id="username" maxlength="256" /></td></tr>
+<tr><td><label for="email">Enter your E-Mail address:</label></td>
+<td><input type="email" name="email" id="email" maxlength="256" /></td></tr>
+<tr><td><label for="city">Select your City:</label></td>
+<td><select id="city" name="city">
+		<option selected="selected" value="0">Select City</option>
+		<option value="Lahore">Lahore</option>
+		<option value="Karachi">Karachi</option>
+		<option value="Islamabad">Islamabad</option>
+		<option value="Hyderabad">Hyderabad</option>
+		<option value="Sukkur">Sukkur</option>
+		<option value="Larkana">Larkana</option>
+		<option value="Nawabshah">Nawabshah</option>
+		<option value="Mirpur Khas">Mirpur Khas</option>
+		<option value="Jacobabad">Jacobabad</option>
+		<option value="Shikarpur">Shikarpur</option>
+		<option value="Dadu">Dadu</option>
+		<option value="Tando Adam Khan">Tando Adam Khan</option>
+		<option value="Ahmadpur East">Ahmadpur East</option>
+		<option value="Ahmed Nager Chatha">Ahmed Nager Chatha</option>
+		<option value="Ali Khan Abad">Ali Khan Abad</option>
+		<option value="Alipur">Alipur</option>
+		<option value="Arifwala">Arifwala</option>
+		<option value="Attock">Attock</option>
+		<option value="Bhera">Bhera</option>
+		<option value="Bhalwal">Bhalwal</option>
+		<option value="Bahawalnagar">Bahawalnagar</option>
+		<option value="Bahawalpur">Bahawalpur</option>
+		<option value="Bhakkar">Bhakkar</option>
+		<option value="Burewala">Burewala</option>
+		<option value="Chillianwala">Chillianwala</option>
+		<option value="Chakwal">Chakwal</option>
+		<option value="Chichawatni">Chichawatni</option>
+		<option value="Chiniot">Chiniot</option>
+		<option value="Chishtian">Chishtian</option>
+		<option value="Daska">Daska</option>
+		<option value="Darya Khan">Darya Khan</option>
+		<option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+		<option value="Dhaular">Dhaular</option>
+		<option value="Dina">Dina</option>
+		<option value="Dinga">Dinga</option>
+		<option value="Dipalpur">Dipalpur</option>
+		<option value="Faisalabad">Faisalabad</option>
+		<option value="Fateh Jang">Fateh Jang</option>
+		<option value="Ghakhar Mandi">Ghakhar Mandi</option>
+		<option value="Gojra">Gojra</option>
+		<option value="Gujranwala">Gujranwala</option>
+		<option value="Gujrat">Gujrat</option>
+		<option value="Gujar Khan">Gujar Khan</option>
+		<option value="Hafizabad">Hafizabad</option>
+		<option value="Haroonabad">Haroonabad</option>
+		<option value="Hasilpur">Hasilpur</option>
+		<option value="Haveli Lakha">Haveli Lakha</option>
+		<option value="Jalalpur Jattan">Jalalpur Jattan</option>
+		<option value="Jampur">Jampur</option>
+		<option value="Jaranwala">Jaranwala</option>
+		<option value="Jhang">Jhang</option>
+		<option value="Jhelum">Jhelum</option>
+		<option value="Kalabagh">Kalabagh</option>
+		<option value="Karor Lal Esan">Karor Lal Esan</option>
+		<option value="Kasur">Kasur</option>
+		<option value="Kamalia">Kamalia</option>
+		<option value="Kamoke">Kamoke</option>
+		<option value="Khanewal">Khanewal</option>
+		<option value="Khanpur">Khanpur</option>
+		<option value="Kharian">Kharian</option>
+		<option value="Khushab">Khushab</option>
+		<option value="Kot Adu">Kot Adu</option>
+		<option value="Jauharabad">Jauharabad</option>
+		<option value="Lalamusa">Lalamusa</option>
+		<option value="Layyah">Layyah</option>
+		<option value="Liaquat Pur">Liaquat Pur</option>
+		<option value="Lodhran">Lodhran</option>
+		<option value="Malakwal">Malakwal</option>
+		<option value="Mamoori">Mamoori</option>
+		<option value="Mailsi">Mailsi</option>
+		<option value="Mandi Bahauddin">Mandi Bahauddin</option>
+		<option value="Mian Channu">Mian Channu</option>
+		<option value="Mianwali">Mianwali</option>
+		<option value="Multan">Multan</option>
+		<option value="Murree">Murree</option>
+		<option value="Muridke">Muridke</option>
+		<option value="Mianwali Bangla">Mianwali Bangla</option>
+		<option value="Muzaffargarh">Muzaffargarh</option>
+		<option value="Narowal">Narowal</option>
+		<option value="Okara">Okara</option>
+		<option value="Renala Khurd">Renala Khurd</option>
+		<option value="Pakpattan">Pakpattan</option>
+		<option value="Pattoki">Pattoki</option>
+		<option value="Pir Mahal">Pir Mahal</option>
+		<option value="Qaimpur">Qaimpur</option>
+		<option value="Qila Didar Singh">Qila Didar Singh</option>
+		<option value="Rabwah">Rabwah</option>
+		<option value="Raiwind">Raiwind</option>
+		<option value="Rajanpur">Rajanpur</option>
+		<option value="Rahim Yar Khan">Rahim Yar Khan</option>
+		<option value="Rawalpindi">Rawalpindi</option>
+		<option value="Sadiqabad">Sadiqabad</option>
+		<option value="Safdarabad">Safdarabad</option>
+		<option value="Sahiwal">Sahiwal</option>
+		<option value="Sangla Hill">Sangla Hill</option>
+		<option value="Sarai Alamgir">Sarai Alamgir</option>
+		<option value="Sargodha">Sargodha</option>
+		<option value="Shakargarh">Shakargarh</option>
+		<option value="Sheikhupura">Sheikhupura</option>
+		<option value="Sialkot">Sialkot</option>
+		<option value="Sohawa">Sohawa</option>
+		<option value="Soianwala">Soianwala</option>
+		<option value="Siranwali">Siranwali</option>
+		<option value="Talagang">Talagang</option>
+		<option value="Taxila">Taxila</option>
+		<option value="Toba Tek Singh">Toba Tek Singh</option>
+		<option value="Vehari">Vehari</option>
+		<option value="Wah Cantonment">Wah Cantonment</option>
+		<option value="Wazirabad">Wazirabad</option>
+		<option value="Badin">Badin</option>
+		<option value="Bhirkan">Bhirkan</option>
+		<option value="Rajo Khanani">Rajo Khanani</option>
+		<option value="Chak">Chak</option>
+		<option value="Dadu">Dadu</option>
+		<option value="Digri">Digri</option>
+		<option value="Diplo">Diplo</option>
+		<option value="Dokri">Dokri</option>
+		<option value="Ghotki">Ghotki</option>
+		<option value="Haala">Haala</option>
+		<option value="Hyderabad">Hyderabad</option>
+		<option value="Islamkot">Islamkot</option>
+		<option value="Jacobabad">Jacobabad</option>
+		<option value="Jamshoro">Jamshoro</option>
+		<option value="Jungshahi">Jungshahi</option>
+		<option value="Kandhkot">Kandhkot</option>
+		<option value="Kandiaro">Kandiaro</option>
+		<option value="Kashmore">Kashmore</option>
+		<option value="KetiBandar">KetiBandar</option>
+		<option value="Khairpur">Khairpur</option>
+		<option value="Kotri">Kotri</option>
+		<option value="Larkana">Larkana</option>
+		<option value="Matiari">Matiari</option>
+		<option value="Mehar">Mehar</option>
+		<option value="Mirpur Khas">Mirpur Khas</option>
+		<option value="Mithani">Mithani</option>
+		<option value="Mithi">Mithi</option>
+		<option value="Mehrabpur">Mehrabpur</option>
+		<option value="Moro">Moro</option>
+		<option value="Nagarparkar">Nagarparkar</option>
+		<option value="Naudero">Naudero</option>
+		<option value="Naushahro Feroze">Naushahro Feroze</option>
+		<option value="Naushara">Naushara</option>
+		<option value="Nawabshah">Nawabshah</option>
+		<option value="Nazimabad">Nazimabad</option>
+		<option value="Qambar">Qambar</option>
+		<option value="Qasimabad">Qasimabad</option>
+		<option value="Ranipur">Ranipur</option>
+		<option value="Ratodero">Ratodero</option>
+		<option value="Rohri">Rohri</option>
+		<option value="Sakrand">Sakrand</option>
+		<option value="Sanghar">Sanghar</option>
+		<option value="Shahbandar">Shahbandar</option>
+		<option value="Shahdadkot">Shahdadkot</option>
+		<option value="Shahdadpur">Shahdadpur</option>
+		<option value="Shahpur Chakar">Shahpur Chakar</option>
+		<option value="Shikarpaur">Shikarpaur</option>
+		<option value="Sukkur">Sukkur</option>
+		<option value="Tando Adam Khan">Tando Adam Khan</option>
+		<option value="Tando Allahyar">Tando Allahyar</option>
+		<option value="Tando Muhammad Khan">Tando Muhammad Khan</option>
+		<option value="Thatta">Thatta</option>
+		<option value="Umerkot">Umerkot</option>
+		<option value="Warah">Warah</option>
+		<option value="Abbottabad">Abbottabad</option>
+		<option value="Adezai">Adezai</option>
+		<option value="Alpuri">Alpuri</option>
+		<option value="Ayubia">Ayubia</option>
+		<option value="Banda Daud Shah">Banda Daud Shah</option>
+		<option value="Bannu">Bannu</option>
+		<option value="Batkhela">Batkhela</option>
+		<option value="Battagram">Battagram</option>
+		<option value="Birote">Birote</option>
+		<option value="Chakdara">Chakdara</option>
+		<option value="Charsadda">Charsadda</option>
+		<option value="Chitral">Chitral</option>
+		<option value="Daggar">Daggar</option>
+		<option value="Dargai">Dargai</option>
+		<option value="Darya Khan">Darya Khan</option>
+		<option value="Dera Ismail Khan">Dera Ismail Khan</option>
+		<option value="Doaba">Doaba</option>
+		<option value="Dir">Dir</option>
+		<option value="Drosh">Drosh</option>
+		<option value="Hangu">Hangu</option>
+		<option value="Haripur">Haripur</option>
+		<option value="Karak">Karak</option>
+		<option value="Kohat">Kohat</option>
+		<option value="Kulachi">Kulachi</option>
+		<option value="Lakki Marwat">Lakki Marwat</option>
+		<option value="Latamber">Latamber</option>
+		<option value="Madyan">Madyan</option>
+		<option value="Mansehra">Mansehra</option>
+		<option value="Mardan">Mardan</option>
+		<option value="Mastuj">Mastuj</option>
+		<option value="Mingora">Mingora</option>
+		<option value="Nowshera">Nowshera</option>
+		<option value="Paharpur">Paharpur</option>
+		<option value="Peshawar">Peshawar</option>
+		<option value="Saidu Sharif">Saidu Sharif</option>
+		<option value="Shorkot">Shorkot</option>
+		<option value="Swabi">Swabi</option>
+		<option value="Swat">Swat</option>
+		<option value="Tangi">Tangi</option>
+		<option value="Tank">Tank</option>
+		<option value="Thall">Thall</option>
+		<option value="Timergara">Timergara</option>
+		<option value="Tordher">Tordher</option>
+		<option value="Quetta">Quetta</option>
+		<option value="Khuzdar">Khuzdar</option>
+		<option value="Turbat">Turbat</option>
+		<option value="Chaman">Chaman</option>
+		<option value="Hub">Hub</option>
+		<option value="Sibi">Sibi</option>
+		<option value="Zhob">Zhob</option>
+		<option value="Gwadar">Gwadar</option>
+		<option value="Dera Murad Jamali">Dera Murad Jamali</option>
+		<option value="Dera Allah Yar">Dera Allah Yar</option>
+		<option value="Usta Mohammad">Usta Mohammad</option>
+		<option value="Loralai">Loralai</option>
+		<option value="Pasni">Pasni</option>
+		<option value="Kharan">Kharan</option>
+		<option value="Mastung">Mastung</option>
+		<option value="Nushki">Nushki</option>
+		<option value="Kalat">Kalat</option>
+		<option value="Azad Kashmir">Azad Kashmir</option>
+		<option value="Askole">Askole</option>
+		<option value="Astore">Astore</option>
+		<option value="Bunji (or Boanzhi)">Bunji (or Boanzhi)</option>
+		<option value="Chilas">Chilas</option>
+		<option value="Chillinji">Chillinji</option>
+		<option value="Chiran">Chiran</option>
+		<option value="Gakuch">Gakuch</option>
+		<option value="Ghangche">Ghangche</option>
+		<option value="Ghizer">Ghizer</option>
+		<option value="Gilgit">Gilgit</option>
+		<option value="Gorikot">Gorikot</option>
+		<option value="Gulmit">Gulmit</option>
+		<option value="Jaglot">Jaglot</option>
+		<option value="Chalt (Nagar)">Chalt (Nagar)</option>
+		<option value="Thole (Nagar)">Thole (Nagar)</option>
+		<option value="Nasir Abad">Nasir Abad</option>
+		<option value="Mayoon">Mayoon</option>
+		<option value="Khana Abad">Khana Abad</option>
+		<option value="Hussain Abad">Hussain Abad</option>
+		<option value="Qasimabad Masoot (Nagar)">Qasimabad Masoot (Nagar)</option>
+		<option value="Nagar Proper">Nagar Proper</option>
+		<option value="Ghulmat (Nagar)">Ghulmat (Nagar)</option>
+		<option value="Karimabad (Hunza)">Karimabad (Hunza)</option>
+		<option value="Ishkoman">Ishkoman</option>
+		<option value="Khaplu">Khaplu</option>
+		<option value="Minimerg">Minimerg</option>
+		<option value="Misgar">Misgar</option>
+		<option value="Passu">Passu</option>
+		<option value="Shimshal">Shimshal</option>
+		<option value="Skardu">Skardu</option>
+		<option value="Sust">Sust</option>
+		<option value="Taghafari">Taghafari</option>
+		<option value="Thorar">Thorar</option>
+		<option value="Nowshera">Nowshera</option>
+		<option value="Dera Bugti">Dera Bugti</option>
+		<option value="Panjgur">Panjgur</option>
+		<option value="Khewrra">Khewrra</option>
+</select></td></tr>
+<tr><td><label for="addr">Enter your Address:</label></td>
+<td><input type="text" id="addr" width="500"></td></tr>
+<tr><td><label for="ph">Enter your Phone Number:</label></td>
+<td><input type="tel" id="ph" onChange="check();" width="500"></td></tr>
+<tr><td colspan="2"><input type="submit" value="Place Order"></td></tr>
+</table>
+</fieldset>
+</form>
+<aside id="related">
+<h1>Related books</h1>
+<ul><li>
+<a href=""><img src="images/21289_51UjaHzpkL.jpg"><p>Cracking the SAT with 5 Practice Tests, 2015 Edition (College Test Preparation)</p>
+<p>Price: Rs 800.00</p></a>
+</li>
+<li>
+<a href=""><img src="images/13460_AZ6692.jpg"><p>Schools and Schooling Practices in Pakistan</p>
+<p>Price: Rs 600.00</p></a>
+</li>
+<li>
+<a href=""><img src="images/5566_AZ1929.jpg"><p>Education in Pakistan Learning from Research Partnerships</p>
+<p>Price: Rs 500.00</p></a>
+</li>
+<li>
+<a href=""><img src="images/PHP-Cookbook,-2nd-Edition.jpg"><p>PHP Cookbook, 2nd Edition</p>
+<p>Price: Rs 2,800.00</p></a>
+</li>
+<li>
+<a href=""><img src="images/something_goes_here.jpg"><p>Oxford Urdu-English Dictionary 9th Edition</p>
+<p>Price: Rs 999.00</p></a>
+</li>
+</ul>
+</aside>
+</div>
+<footer>
+<section id="col1" class="col">
+<h1>Quick Links</h1>
+<ul>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="#">News</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="#">All Products</a></li>
+</ul>
+</section>
+<section id="col2" class="col">
+<h1>Connect with us</h1>
+<ul>
+<li><a href="#"><img src="images/twitter.png"></a></li>
+<li><a href="#"><img src="images/facebook.png"></a></li>
+<li><a href="#"><img src="images/google-plus.png"></a></li>
+<li><a href="#"><img src="images/linkedin.png"></a></li>
+</ul>
+</section>
+<section id="col3" class="col">
+<h1>Get Latest Offers and News</h1>
+<form method="post" action="">
+<ul>
+<li><input type="email" placeholder="Email"></li>
+<li><input type="submit" value="Subscribe to Newsletter"></li>
+</ul>
+</form>
+</section>
+</footer>
+</body>
+</html>

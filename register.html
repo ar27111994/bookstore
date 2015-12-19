@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet/reset.css">
+<link rel="stylesheet" type="text/css" href="stylesheet/fonts/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="stylesheet/icons/style.css">
+<link rel="stylesheet" type="text/css" href="stylesheet/register.css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<meta charset="utf-8">
+<title>Login | Register</title>
+</head>
+<body>
+<header>
+<div id="topbar">
+<nav>
+<ul>
+<li><a href="index.html"><span class="icon-home3"></span>Home</a></li>
+<li><a href=""><span class="icon-user"></span>My Account</a></li>
+<li><a href=""><span class="icon-cart"></span>Shopping Cart</a></li>
+<li><a href="checkout.html"><span class="icon-checkmark"></span>Checkout</a></li>
+</ul>
+</nav>
+</div>
+<div id="subheader">
+<a href="index.html"><h1 id="logo">UAAR Bookstore</h1></a>
+<div id="login"><a href="register.html">Login | Register</a></div>
+</div>
+<div id="cat">
+<nav>
+<ul>
+<li><a href="">Islamic Books</a></li>
+<li><a href="">Magazines</a></li>
+<li><a href="">Textbooks</a></li>
+<li><a href="">Novels</a></li>
+<li><a href="">Notes</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div id="container">
+<div id="signup">
+<section><form action="process.php" method="post">
+<fieldset>
+<legend>Customer  Registration</legend>
+<table>
+<tr><td><label for="username">Enter your name:</label></td>
+<td><input type="text" size="50" name="username" id="username" maxlength="256" /></td></tr>
+<tr><td><label for="email">Enter your E-Mail address:</label></td>
+<td><input type="email" size="50" name="email" id="email" maxlength="256" /></td></tr>
+<tr><td><label for="pswd">Enter a password (maximum 20 characters):</label></td>
+<td><input type="password" size="50" name="pswd" id="pswd" maxlength="20" /></td></tr>
+<tr><td><label for="confirm_password">Confirm Password</label></td>
+<td><input type="password" size="50" name="confirm_password" id="confirm_password" /></td></tr>
+<tr><td><label for="address">Enter your Address:</label></td>
+<td><input type="text" size="50" id="address" width="500"></td></tr>
+<tr><td><label for="interest">Select your Area Of Interest:</label></td>
+<td><select id="interest" name="inter">
+	<option value="0">Select</option>
+	<option value="594">Autobiography</option>
+	<option value="65">Animals, Birds &amp; Wildtrfe</option>
+	<option value="66">Architecture &amp; Interior Design</option>
+	<option value="67">Art, Design &amp; Fashion</option>
+	<option value="76">Automobile</option>
+	<option value="77">Aviation</option>
+	<option value="78">Award Winning Books</option>
+	<option value="79">Biographies &amp; Memoirs</option>
+	<option value="88">Business, Management &amp; Finance</option>
+	<option value="121">Childcare &amp; Parenting</option>
+	<option value="122">Coffee Tables</option>
+	<option value="123">Computers &amp; Information Technology</option>
+	<option value="149">Cooking, Food &amp; Drink</option>
+	<option value="159">Current Affairs</option>
+	<option value="160">Engineering</option>
+	<option value="161">Entertainment</option>
+	<option value="163">Fiction</option>
+	<option value="167">Games &amp; Sports</option>
+	<option value="168">Gardening &amp; Garden Design</option>
+	<option value="169">Gift Books</option>
+	<option value="170">Graphic Novels</option>
+	<option value="171">Guns &amp; Ammunition</option>
+	<option value="172">Health</option>
+	<option value="173">History</option>
+	<option value="174">trterature/Poetry &amp; Drama</option>
+	<option value="175">Local Interest</option>
+	<option value="177">Mathematics</option>
+	<option value="178">Medical Books</option>
+	<option value="179">Non-Fiction</option>
+	<option value="180">Philosophy</option>
+	<option value="181">Potrtics &amp; Social Sciences</option>
+	<option value="182">Psychology</option>
+	<option value="183">Reduced Price</option>
+	<option value="184">Reference</option>
+	<option value="185">Retrgion &amp; Spirituatrty</option>
+	<option value="186">Science</option>
+	<option value="187">Self Help</option>
+	<option value="188">Travel</option>
+	<option value="189">Urdu Books</option>
+	<option value="190">Young Adults</option>
+	<option value="330">Children's Books</option>
+	<option value="520">Global Affairs</option>
+	<option value="523">Performing Arts</option>
+	<option value="524">Nature &amp; Ecology</option>
+	<option value="528">Weapons &amp; Warfare</option>
+	<option value="574">Signed Copies</option>
+</select></td></tr>
+<tr><td><label for="interest2">Select another Area Of Interest:</label></td>
+<td><select id="interest2" name="inter2">
+	<option value="0">Select</option>
+	<option value="594">Autobiography</option>
+	<option value="65">Animals, Birds &amp; Wildtrfe</option>
+	<option value="66">Architecture &amp; Interior Design</option>
+	<option value="67">Art, Design &amp; Fashion</option>
+	<option value="76">Automobile</option>
+	<option value="77">Aviation</option>
+	<option value="78">Award Winning Books</option>
+	<option value="79">Biographies &amp; Memoirs</option>
+	<option value="88">Business, Management &amp; Finance</option>
+	<option value="121">Childcare &amp; Parenting</option>
+	<option value="122">Coffee Tables</option>
+	<option value="123">Computers &amp; Information Technology</option>
+	<option value="149">Cooking, Food &amp; Drink</option>
+	<option value="159">Current Affairs</option>
+	<option value="160">Engineering</option>
+	<option value="161">Entertainment</option>
+	<option value="163">Fiction</option>
+	<option value="167">Games &amp; Sports</option>
+	<option value="168">Gardening &amp; Garden Design</option>
+	<option value="169">Gift Books</option>
+	<option value="170">Graphic Novels</option>
+	<option value="171">Guns &amp; Ammunition</option>
+	<option value="172">Health</option>
+	<option value="173">History</option>
+	<option value="174">trterature/Poetry &amp; Drama</option>
+	<option value="175">Local Interest</option>
+	<option value="177">Mathematics</option>
+	<option value="178">Medical Books</option>
+	<option value="179">Non-Fiction</option>
+	<option value="180">Philosophy</option>
+	<option value="181">Potrtics &amp; Social Sciences</option>
+	<option value="182">Psychology</option>
+	<option value="183">Reduced Price</option>
+	<option value="184">Reference</option>
+	<option value="185">Retrgion &amp; Spirituatrty</option>
+	<option value="186">Science</option>
+	<option value="187">Self Help</option>
+	<option value="188">Travel</option>
+	<option value="189">Urdu Books</option>
+	<option value="190">Young Adults</option>
+	<option value="330">Children's Books</option>
+	<option value="520">Global Affairs</option>
+	<option value="523">Performing Arts</option>
+	<option value="524">Nature &amp; Ecology</option>
+	<option value="528">Weapons &amp; Warfare</option>
+	<option value="574">Signed Copies</option>
+</select></td></tr>
+<tr><td><label>Select Gender:</label></td><td><input type="radio" name="gender" value="m" />Male
+<input type="radio" name="gender" value="f" />Female</td></tr>
+<tr><td><label for="age">Select your age (From 18 to 65 years):</label></td>
+<td><input type="number" max="65" min="18" name="age" step="1" id="age" /></td></tr>
+<tr><td><label for="image">Upload Your Picture:</label></td>
+<td><input type="file" name="photo" id="image" /></td></tr>
+<tr><td><input type="submit" value="Submit Form" /></td></tr>
+</table>
+</fieldset>
+</form></section>
+</div>
+<div id="signin">
+<section><form action="#" method="post" enctype="multipart/form-data">
+<fieldset>
+<legend>Sign In</legend>
+<table>
+<tr><td><label for="user-id">Userrname:</label></td>
+<td><input name="username" size="35" id="user-id" type="text" maxlength="22" /></td></tr>
+<tr><td><label for="pswd">Password:</label></td>
+<td><input name="pswd" size="35" id="pswrd" type="password" maxlength="15" /></td></tr>
+<tr><td><input type="submit" value="Login" /></td></tr>
+</ul>
+</fieldset>
+</table></section>
+</div>
+</div>
+<footer>
+<section id="col1" class="col">
+<h1>Quick Links</h1>
+<ul>
+<li><a href="about us.html">About Us</a></li>
+<li><a href="#">News</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="#">All Products</a></li>
+</ul>
+</section>
+<section id="col2" class="col">
+<h1>Connect with us</h1>
+<ul>
+<li><a href="#"><img src="images/twitter.png"></a></li>
+<li><a href="#"><img src="images/facebook.png"></a></li>
+<li><a href="#"><img src="images/google-plus.png"></a></li>
+<li><a href="#"><img src="images/linkedin.png"></a></li>
+</ul>
+</section>
+<section id="col3" class="col">
+<h1>Get Latest Offers and News</h1>
+<form method="post" action="">
+<ul>
+<li><td><input type="email" placeholder="Email"></li>
+<li><td><input type="submit" value="Subscribe to Newsletter"></li>
+</ul>
+</form>
+</section>
+</footer>
+</body>
+</html>
