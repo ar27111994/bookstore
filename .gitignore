@@ -1,0 +1,12 @@
+# Netbeans IDE Project Configuration files and folders
+
+.idea
+.settings
+_notes
+nbproject
+.buildpath
+.project
+
+# HTML Template Files
+
+*.html
